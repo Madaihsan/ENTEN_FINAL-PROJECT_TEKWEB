@@ -1,18 +1,18 @@
 // import firebase from "firebase/app";
-import 'firebase/auth'
+import "firebase/auth";
 // import 'firebase/firestore'
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAlkAPJkg2liCGJlcXCkA4lLMV-o0oTEPI",
-    authDomain: "final-project-f10b3.firebaseapp.com",
-    projectId: "final-project-f10b3",
-    storageBucket: "final-project-f10b3.firebasestorage.app",
-    messagingSenderId: "935991170895",
-    appId: "1:935991170895:web:ec6eadc64ae30a34db973a"
-  };
-  
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+};
 
-  export default app;
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+export default app;
