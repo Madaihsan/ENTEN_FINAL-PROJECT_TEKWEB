@@ -18,7 +18,7 @@ import firebase from './config/firebase/index';
 console.log('config firebase ==> ', firebase);
 
 const App = () => {
-    const userRole = "admin"; // Anda bisa mengubah ini sesuai dengan autentikasi yang digunakan
+    const userRole = "admin"; 
 
     return (
         <Router>

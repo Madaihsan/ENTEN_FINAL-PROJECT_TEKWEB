@@ -165,6 +165,7 @@ const response = await axios.get("http://localhost:5000/api/students");
 const students = response.data;
 setTotalStudents(students.length);
 
+
 	Kode ini melakukan permintaan GET ke http://localhost:5000/api/students untuk mengambil data siswa dari server. Data yang dikembalikan dari API kemudian disimpan ke dalam state totalStudents.
 6. Autentifikasi
 Firebase Authentication dan Firebase Firestore untuk menangani proses login pengguna serta pengelolaan peran mereka
